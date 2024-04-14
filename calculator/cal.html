@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" placeholder="number1..." id="num1" />
+      <select name="" id="opeartor">
+        <option>Operator</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="X">X</option>
+      </select>
+      <input type="text" placeholder="number2..." id="num2" /><br />
+      <button onclick="calc();">=</button><br />
+      <input type="text" placeholder="Result" id="result" />
+    </div>
+  </body>
+  <script>
+    function calc() {
+      let n1 = parseFloat(document.getElementById("num1").value);
+      let n2 = parseFloat(document.getElementById("num2").value);
+      let oper = document.getElementById("opeartor").value;
+
+      if (oper === "+") {
+        document.getElementById("result").value = n1 + n2;
+      }
+      if (oper === "-") {
+        document.getElementById("result").value = n1 - n2;
+      }
+      if (oper === "/") {
+        document.getElementById("result").value = n1 / n2;
+      }
+      if (oper === "X") {
+        document.getElementById("result").value = n1 * n2;
+      }
+    }
+  </script>
+</html>

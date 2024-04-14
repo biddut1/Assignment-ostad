@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+}
+
+input,
+button,
+select {
+  text-align: center;
+  margin-top: 10px;
+  height: 60px;
+  cursor: pointer;
+  width: 180px;
+  font-size: 30px;
+  box-shadow: 2px 4px 8px;
+}
+input:hover,
+button:hover,
+select:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  border-color: blueviolet;
+  background: #dbcfcf;
+}
